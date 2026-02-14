@@ -1,4 +1,3 @@
- <script>
-        alert('welcome');
+ alert('welcome');
         
-    </script>
+ 
