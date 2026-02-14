@@ -4,5 +4,15 @@
             margin: 0;
         }
        .button-class{
-          color: red;
+          color:green;
+          
+        }
+        #main-button{
+            border-radius: 50px;
+            background-color: limegreen;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+            text-align: center;
         }
