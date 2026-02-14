@@ -1,4 +1,4 @@
  <script>
-        alert('i m an alert box')
+        alert('welcome');
         
     </script>
