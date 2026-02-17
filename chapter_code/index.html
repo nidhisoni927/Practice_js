@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Project</title>
+   <title>Myntra Bag</title>
    <style>
       .bag-button{
         background-color: chartreuse;
+        border:none;
+        padding: 5px 15px;
+        border-radius: 10px;
 
+      }
+      .wish-button{
+         padding: 5px 35px;
+         border: 2px solid black;
+         border-radius: 10px;
+         text-transform: uppercase;
       }
    </style>
 </head>
 
 <body>
 
-<button class="bag-button" onclick="cartQuantity = cartQuantity + 1; 
-document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">Add to Bag</button>
+    <button class="bag-button" onclick="
+  cartQuantity++;
+  document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+  ">Add to Bag</button>
 
-<button class ="wish-button" onclick="cartQuantity = cartQuantity  - 1; 
-document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">Move to list</button>
+<button class="wish-button" onclick="
+cartQuantity--;
+document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+">Move to Wishlist</button>
 
-
-<button class="bag-button" onclick="cartQuantity = cartQuantity + 2; 
-document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">add 1+1 sale item</button>
+<button class="bag-button" onclick="
+cartQuantity += 2;
+document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+">Add 1+1 Sale Item</button>
 
 <h1 id="cart-summary"></h1>
-    <script>
-    let cartQuantity = 0;
-    document.querySelector('#cart-summary').
-    innerText = 'your bag has item';
+
+
+<script>
+ let cartQuantity = 0;
+ document.querySelector('#cart-summary').
+ innerText = 'Your Bag has ${cartQuantity} items'
     </script>
 </body>
 </html>
