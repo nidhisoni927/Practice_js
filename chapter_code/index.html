@@ -13,9 +13,15 @@
 <body>
 
 <button class="bag-button" onclick="cartQuantity = cartQuantity + 1; 
-document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">Add to Bag</button>"
-<button class ="wish-button" onclick="alert('item has been added to wishlist')">Move to list</button>
-<button class="bag-button" onclick="alert('item has been added to bag');">Add 1+1 sale Item</button>
+document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">Add to Bag</button>
+
+<button class ="wish-button" onclick="cartQuantity = cartQuantity  - 1; 
+document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">Move to list</button>
+
+
+<button class="bag-button" onclick="cartQuantity = cartQuantity + 2; 
+document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">add 1+1 sale item</button>
+
 <h1 id="cart-summary"></h1>
     <script>
     let cartQuantity = 0;
