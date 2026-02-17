@@ -3,14 +3,24 @@
 <head>
    <title>Project</title>
    <style>
+      .bag-button{
+        background-color: chartreuse;
 
+      }
    </style>
 </head>
+
 <body>
+
+<button class="bag-button" onclick="cartQuantity = cartQuantity + 1; 
+document.querySelector('#cart-summary').innerText = 'your bag has ${cartQuantity}item';">Add to Bag</button>"
+<button class ="wish-button" onclick="alert('item has been added to wishlist')">Move to list</button>
+<button class="bag-button" onclick="alert('item has been added to bag');">Add 1+1 sale Item</button>
+<h1 id="cart-summary"></h1>
     <script>
-   let welcomeMessage = 'hellow friends';
-   console.log('hello friends');
-   console.log(welcomeMessage);
+    let cartQuantity = 0;
+    document.querySelector('#cart-summary').
+    innerText = 'your bag has item';
     </script>
 </body>
 </html>
