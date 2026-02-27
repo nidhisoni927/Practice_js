@@ -13,11 +13,16 @@
     <h1>Bat Ball Stump Game</h1>
     <button onclick="console.log('you have chosen Bat');
     //this will generate between 0 & 3
-    let randomNumber = Math.random * 3;
+    let randomNumber = Math.random() * 3;
     if (randomNumber > 0 &&  randomNumber <=1){
+        let computerChoice = 'bat';
 
     }
-
+    else  if (random > 1 && randomNumber <= 2)
+   {
+    let computerChoice = 'Ball';
+    console.log('computer choice is Ball')
+   }
     ">Bat</button>
     <button >Ball</button>
     <button >Stump</button>
