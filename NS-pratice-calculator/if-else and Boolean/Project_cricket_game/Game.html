@@ -15,22 +15,31 @@
     //this will generate between 0 & 3
     let randomNumber = Math.random() * 3;
     if (randomNumber > 0 &&  randomNumber <=1){
-        let computerChoice = 'Bat';
-        console.log('computer choice is Bat');
-
-    }
+        computerChoice = 'Bat';
+     //   console.log('computer choice is Bat');
+ }
     else  if (randomNumber > 1 && randomNumber <= 2)
    {
-    let computerChoice = 'Ball';
-    console.log('computer choice is Ball');
-   }
+     computerChoice = 'Ball';{
+        console.log('computer choice is Ball');
+    }
+}
+    
    else {
     let computerChoice = 'Stump';
     console.log('computer choice is stump');
    }
+   console.log('computer choice is ${computerChoice}');
  if (computerChoice ==='Ball'){
     console.log('User won.');
- }
+ }else if (computerChoice === 'Bat'){
+     console.log('its tie match')
+    } else if (computerChoice === 'Stump');{
+        consloe.log('computer win')
+    }
+
+   
+ 
 
 
 
