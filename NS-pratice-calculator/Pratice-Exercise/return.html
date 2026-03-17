@@ -9,6 +9,10 @@
     <script>
         function determinDriverStatus(){
             let age = 10;
+            if (age === undefined){
+                return 'ap avtar h';
+            }
+            console.log('checking drive status');
             let status;
             if (age > 18) {
                 status = 'you can drive';
