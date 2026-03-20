@@ -7,21 +7,36 @@
 </head>
 <body>
     <script>
-        let product = {
+        // let product = {
+        // name: 'T-shirt',
+        // price: 789,
+        // rating: {
+        //     stars: 4.5,
+        //     noOfReview: 456,
+
+        // },
+        // };
+
+        // console.log(typeof product);
+        // console.log(product);
+        // let str = JSON.stringify(product);
+        // console.log(typeof str);
+        // console.log(str);
+    //    localStorage.setItem('Name' , 'KG coding');
+    let product = {
         name: 'T-shirt',
-        price: 789,
-        rating: {
+         price: 789,
+     rating: {
             stars: 4.5,
-            noOfReview: 456,
+          noOfReview: 456,
 
         },
-        };
+         };
+ localStorage.setItem('product', product);
+    //   let product2 = JSON.parse(localStorage.getItem('product'));
+    //   console.log(product2);
+    console.log(localStorage.getItem('product'));
 
-        console.log(typeof product);
-        console.log(product);
-        let str = JSON.stringify(product);
-        console.log(typeof str);
-        console.log(str);
     </script>
 </body>
 </html>
