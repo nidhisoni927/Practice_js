@@ -10,7 +10,8 @@
 
   
     <script>
-        let date = new Date();
+        function doGreeting(){
+          let date = new Date();
     //    let hours = date.getHours();
     let hours = 15;
        let heading = document.querySelector('#greeting');
@@ -23,6 +24,8 @@
  else{
     heading.innerText='good Night';
  }
+        }
+      
 
     </script>
 </body>
